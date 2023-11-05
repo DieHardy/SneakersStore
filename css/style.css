@@ -5,6 +5,29 @@
 }
 body {
     font-family: "Anonymous Pro", monospace, Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.sneaker__link {
+    text-decoration: none;
+}
+.sneaker__link:visited {
+    color: black;
+}
+.footer__divider::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e8ec;
+    top: 87px;
+    opacity: 40%;
+}
+.header__divider {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    opacity: 40%;
 }
 .container {
     max-width: 1161px;
@@ -50,15 +73,97 @@ body {
     align-content: center;
     padding-bottom: 25px;
 }
+.sneakers__collection .sneaker:nth-child(1) {
+    order: 4;
+}
+.sneakers__collection .sneaker:nth-child(2) {
+    order: 5;
+    height: 420px;
+}
+.sneakers__collection .sneaker:nth-child(3) {
+    order: 6;
+}
+.sneakers__collection .sneaker:nth-child(4) {
+    order: 3;
+}
+.sneakers__collection .sneaker:nth-child(5) {
+    order: 7;
+    height: 420px;
+}
+.sneakers__collection .sneaker:nth-child(6) {
+    order: 8;
+}
+.sneakers__collection .sneaker:nth-child(7) {
+    order: 1;
+    height: 420px;
+}
+.sneakers__collection .sneaker:nth-child(8) {
+    order: 9;
+    height: 420px;
+}
+.sneakers__collection .sneaker:nth-child(9) {
+    order: 2;
+}
+.sneaker__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sneaker__text {
+    max-width: 506px;
+}
+.sneaker__attributes {
+    width: 506px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+.sneaker__list {
+    font-size: 20px;
+    font-weight: 400;
+    list-style-type: none;
+}
+.sneaker__list-right {
+    text-align: right;
+    padding-top: 74px;
+}
+.sneaker__list li {
+    margin: 48px 0;
+}
+.sneaker__list li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    background-color: black;
+}
 
+.sneaker__list li:nth-child(1):after {
+    top: 50px;
+}
+.sneaker__list li:nth-child(2):after {
+    top: 118px;
+}
+.sneaker__list li:nth-child(3):after {
+    top: 187px;
+}
+.sneaker__list li:nth-child(4):after {
+    top: 255px;
+}
+.sneaker__list li:nth-child(1) {
+    font-size: 30px;
+    margin: 0;
+}
+.sneaker__list-right li:nth-child(1) {
+    font-size: 20px;
+}
 .sneaker {
     height: 394px;
     width: 371px;
     background-color: white;
     border-radius: 5px;
-}
-.sneaker:nth-child(3n + 2) {
-    height: 420px;
 }
 main {
     background-color: #f1f1f1;
@@ -70,6 +175,29 @@ main {
     font-size: 26px;
     font-weight: 500;
     width: 323px;
+}
+.sneaker__subtitle {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 24px 0;
+}
+.sneaker__block__title {
+    font-size: 48px;
+    margin-top: 32px;
+    font-weight: 400;
+}
+.sneaker__image-big {
+    width: 100%;
+}
+.sneaker__block__info {
+    padding: 48px;
+}
+.sneaker__block {
+    min-height: 1140px;
+    background-color: white;
+    margin: 32px 0px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .sneaker__descr {
     font-size: 20px;
@@ -87,6 +215,7 @@ main {
     flex-direction: row;
     padding: 32px 0;
     justify-content: space-between;
+    position: relative;
 }
 .copyright {
     color: #a1a6b4;
@@ -95,6 +224,9 @@ main {
     padding-top: 18px;
 }
 @media (max-width: 826px) {
+    .footer__divider::before {
+        top: 120px;
+    }
     .sneakers__collection {
         flex-direction: column;
     }
