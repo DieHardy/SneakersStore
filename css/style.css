@@ -73,6 +73,10 @@ body {
     align-content: center;
     padding-bottom: 25px;
 }
+.sneaker__paragraph {
+    font-size: 20px;
+    line-height: 24px;
+}
 .sneakers__collection .sneaker:nth-child(1) {
     order: 4;
 }
