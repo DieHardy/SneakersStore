@@ -199,7 +199,7 @@ main {
     background-color: #f1f1f1;
     width: 100%;
     min-height: 100px;
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 .sneaker__title {
     font-size: 26px;
@@ -254,11 +254,17 @@ main {
     padding-top: 18px;
 }
 @media (max-width: 826px) {
+    .sneaker__attributes {
+        width: 296px;
+    }
     .footer__divider::before {
         top: 120px;
     }
     .footer {
         min-height: 195px;
+    }
+    .sneaker {
+        width: 343px;
     }
     .sneaker__block__title {
         font-size: 32px;
@@ -302,6 +308,10 @@ main {
         margin: 0 auto;
         border-radius: 50px 50px 0 0;
     }
+
+    .sneaker__image {
+        width: 343px;
+    }
     .sneaker__block__info {
         padding: 0;
     }
@@ -323,14 +333,15 @@ main {
         padding-top: 0;
         position: absolute;
         top: 73px;
-        left: 146px;
+        left: 137px;
     }
     .sneakers__collection {
         flex-direction: column;
     }
     .collection__title {
-        text-align: center;
-        font-size: 35px;
+        text-align: left;
+
+        font-size: 32px;
     }
     .header {
         flex-direction: column;
