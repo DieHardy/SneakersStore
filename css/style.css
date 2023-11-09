@@ -253,7 +253,22 @@ main {
     justify-content: center;
     padding-top: 18px;
 }
-@media (max-width: 826px) {
+@media (max-width: 1140px) {
+    .header {
+        padding: 0 50px;
+    }
+    .main {
+        padding: 50px;
+    }
+    .footer {
+        padding: 0 50px;
+    }
+    .sneakers__collection {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 960px) {
     .sneaker__attributes {
         width: 296px;
     }
