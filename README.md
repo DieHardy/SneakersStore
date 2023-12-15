@@ -1,2 +1,2 @@
-# https://twicehardy.github.io/SneakersStore/
+# https://diehardy.github.io/SneakersStore/
 course site
